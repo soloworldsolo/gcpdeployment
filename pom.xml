@@ -57,7 +57,7 @@
 						</image>
 					</from>
 					<to>
-						<image>gcr.io/temporal-fx-273605/sologcp:latest</image>
+						<image>gcr.io/temporal-fx-273605/sologcp</image>
 					</to>
 				</configuration>
 			</plugin>
