@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gcpdeployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gcpdeployment
+  template:
+    metadata:
+      labels:
+        app: gcpdeployment
+    spec:
+      containers:
+        - name: gcpdeployment
+          image: sologcp
+          ports:
+            - containerPort: 9090

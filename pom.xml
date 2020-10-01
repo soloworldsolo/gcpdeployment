@@ -25,6 +25,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 			<exclusions>
@@ -46,6 +50,16 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>2.0.0</version>
+				<configuration>
+					<from>
+						<image>
+							adoptopenjdk/openjdk11:alpine-slim
+						</image>
+					</from>
+					<to>
+						<image>gcr.io/temporal-fx-273605/sologcp</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
