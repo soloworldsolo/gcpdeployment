@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: gcpdeployment
-          image: gcr.io/temporal-fx-273605/sologcp:latest
+          image: gcr.io/temporal-fx-273605/sologcp
           ports:
             - containerPort: 9090
