@@ -4,7 +4,7 @@ build:
   tagPolicy:
     sha256: { }
   artifacts:
-    - image: gcr.io/temporal-fx-273605/sologcp:latest
+    - image: gcr.io/temporal-fx-273605/sologcp
       jib: {}
 deploy:
   kubectl:
